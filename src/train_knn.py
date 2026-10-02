@@ -97,11 +97,21 @@ print(classification_report(y_test, y_prediction))
 # Confusion matrix
 cm = confusion_matrix(y_test, y_prediction)
 
+activity_names = [
+    "Walking",
+    "Upstairs",
+    "Downstairs",
+    "Sitting",
+    "Standing",
+    "Lying"
+]
+
 ConfusionMatrixDisplay(
     confusion_matrix=cm,
-    display_labels=np.unique(y_train)
+    display_labels=activity_names
 ).plot()
 
 plt.title("KNN Confusion Matrix")
+plt.xticks(rotation=35, ha="right")
 plt.tight_layout()
 plt.show()
