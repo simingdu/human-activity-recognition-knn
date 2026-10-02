@@ -53,13 +53,14 @@ Cross-validation selected:
 - **Best k:** 1
 - **Mean 5-fold cross-validation accuracy:** 96.59%
 - **Final test accuracy:** 85.34%
+
 ![KNN cross-validation accuracy](images/knn_cv_accuracy.png)
 
 The confusion matrix provides a closer look at how the model performs across the six activity classes.
 
 ![KNN confusion matrix](images/knn_confusion_matrix.png)
 
-The difference between cross-validation accuracy and final test accuracy shows why it is important to keep the test set separate from model selection.
+The final test accuracy was lower than the cross-validation accuracy, showing that validation performance may not fully reflect performance on unseen data.
 
 In the original version of this exercise, different values of `k` were compared directly on the test set. For this portfolio version, I changed the workflow so that `k` is selected using only the training data, while the test set is reserved for final evaluation.
 
