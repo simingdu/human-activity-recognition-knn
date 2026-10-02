@@ -69,6 +69,9 @@ In the original version of this exercise, different values of `k` were compared 
 human-activity-recognition-knn/
 ├── data/
 │   └── README.md
+├── images/
+│   ├── knn_confusion_matrix.png
+│   └── knn_cv_accuracy.png
 ├── src/
 │   └── train_knn.py
 ├── .gitignore
