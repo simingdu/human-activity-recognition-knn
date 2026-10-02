@@ -53,6 +53,7 @@ Cross-validation selected:
 - **Best k:** 1
 - **Mean 5-fold cross-validation accuracy:** 96.59%
 - **Final test accuracy:** 85.34%
+![KNN cross-validation accuracy](images/knn_cv_accuracy.png)
 
 The difference between cross-validation accuracy and final test accuracy shows why it is important to keep the test set separate from model selection.
 
